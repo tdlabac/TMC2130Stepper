@@ -146,6 +146,7 @@ class TMC2130Stepper {
 		void hstrt(								uint8_t B);
 		void hend(								uint8_t B);
 		void fd(									uint8_t B);
+		void fd3(									bool B);
 		void disfdcc(							bool 		B);
 		void rndtf(								bool 		B);
 		void chm(									bool 		B);
@@ -162,6 +163,7 @@ class TMC2130Stepper {
 		uint8_t hstrt();
 		uint8_t hend();
 		uint8_t fd();
+		bool fd3();
 		bool 	disfdcc();
 		bool 	rndtf();
 		bool 	chm();
